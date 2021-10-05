@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'parcial';
+  textoDeInput:string|any;
+  constructor()
+  {this.verTexto()
+  }
+  verTexto()
+  {
+    console.log(this.textoDeInput)
+  }
+
 }

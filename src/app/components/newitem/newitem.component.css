@@ -1,0 +1,51 @@
+div
+{
+      display:flex;
+        flex-direction:column ;
+        align-items: center;
+}
+button
+{
+  margin:10px;
+}
+.b-input-two {
+    width: 200px;
+    padding-bottom: 5vh;
+  }
+  
+  .b-input-two__p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    margin: 5px;
+  }
+  
+  .b-input-two__input {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  }
+  
+  .b-input-two__input:focus {
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .b-input-two__input:focus::placeholder {
+    color: transparent;
+  }
+  
+
+  input:invalid {
+    border: 2px dashed red;
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  }

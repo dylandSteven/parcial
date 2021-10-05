@@ -1,0 +1,34 @@
+<button [routerLink]="['/knowledge']" mat-raised-button color="warn"><---</button>
+
+
+<div>
+    <h1>Add New Knowledge</h1>
+    <!--input  [(ngModel)]='title' type="text"  class="form-control" placeholder="Title"      aria-label="" aria-describedby="basic-addon1">
+    <input  [(ngModel)]='urlToImage' type="text"  class="form-control" placeholder="URL Image" aria-label="" aria-describedby="basic-addon1">
+    <input  [(ngModel)]='summary' type="text"  class="form-control" placeholder="Summary"    aria-label="" aria-describedby="basic-addon1">
+    <input  [(ngModel)]='content' type="text"  class="form-control" placeholder="Content"    aria-label="" aria-describedby="basic-addon1"-->
+    <form>
+
+        <article class="b-input-two">
+            <p class="b-input-two__p">Enter the title</p>
+            <input [(ngModel)]='title' class="b-input-two__input" type="text" placeholder="Title" required >
+        </article>
+        <article class="b-input-two">
+            <p class="b-input-two__p">Enter the urlImage</p>
+        <input [(ngModel)]='urlToImage' class="b-input-two__input" type="text" placeholder="URL Image"required >
+    </article>
+    <article class="b-input-two">
+        <p class="b-input-two__p">Enter the summary</p>
+        <input [(ngModel)]='summary' class="b-input-two__input" type="text" placeholder="Summary"required >
+    </article>
+    <article class="b-input-two">
+        <p class="b-input-two__p">Enter the content</p>
+        <input [(ngModel)]='content' class="b-input-two__input" type="text" placeholder="Content" required >
+    </article>
+      <button [routerLink]="['/knowledge']" (click)="addData()" mat-raised-button color="primary">SAVE</button>
+      <button (click)="refresh()" [routerLink]="['/knowledge']" type="cancel" mat-raised-button color="warn" >Cancel</button>
+
+    </form>
+      
+    </div>
+
